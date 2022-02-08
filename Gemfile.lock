@@ -76,6 +76,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.1-x64-mingw32)
       racc (~> 1.4)
+    nokogiri (1.13.1-x86_64-linux)
+      racc (~> 1.4)
     parallel (1.21.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -108,6 +110,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
   x86_64-unknown
 
 DEPENDENCIES
