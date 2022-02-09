@@ -41,7 +41,7 @@ last_modified_at: 2022-02-09
 ### 티스토리를 선택하지 않은 이유
 하지만 생각이 바뀐 건 이 게시물을 찾으면서였다.
 
-https://unzengan.com/1425
+<https://unzengan.com/1425>
 ```
 블로그 해킹으로 인한 접근 제한 막는 유일한 방법
 ```
@@ -97,7 +97,7 @@ https://unzengan.com/1425
 
 처음에 나는 이 글을 보고 깃허브 블로그를 별도의 로컬 작업 없이 깃허브 서비스만으로 세팅할 수 있다고 생각했다.
 
-https://ahnslab.com/21-how-to-start-github-blog/  
+<https://ahnslab.com/21-how-to-start-github-blog/>  
 ```
 Github 블로그 시작하는 방법(로컬 설치 없이 쉽게 만들기)
 ```
@@ -145,7 +145,8 @@ Github 블로그 시작하는 방법(로컬 설치 없이 쉽게 만들기)
 
 내가 구글링해서 찾아낸 이 문제의 해결법은, 로컬에서 jekyll 서버를 띄워서 그걸로 미리보기를 하는 것이다.  
 
-https://ansohxxn.github.io/blog/posting/#6-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%9C%BC%EB%A1%9C-%EC%93%B4-%ED%8F%AC%EC%8A%A4%ED%8A%B8-%EB%82%B4%EC%9A%A9%EC%9D%84-%EB%AF%B8%EB%A6%AC-%EB%B3%B4%EA%B8%B0
+[https://ansohxxn.github.io/blog/posting/](https://ansohxxn.github.io/blog/posting/#6-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EC%9C%BC%EB%A1%9C-%EC%93%B4-%ED%8F%AC%EC%8A%A4%ED%8A%B8-%EB%82%B4%EC%9A%A9%EC%9D%84-%EB%AF%B8%EB%A6%AC-%EB%B3%B4%EA%B8%B0)
+
 ```
 [Github 블로그] 블로그 포스팅하는 방법
 ```
