@@ -102,6 +102,8 @@ docker run --rm \
 
 다만 docker의 실행권한이 없을 수 있으므로, 권한이 없다고 나오면 관리자 계정으로 접속해서 `sudo -i`를 쳐서 슈퍼유저 권한을 가져와야 한다.
 
+> [Synology NAS에 SSH 서버 활성화하고 접속하는 방법](https://www.lainyzine.com/ko/article/how-to-enable-and-access-an-ssh-server-to-your-synology-nas/)
+
 ### 3. 실행
 브라우저에서 NAS에 4000번 포트로 접속해보면 블로그가 뜨는 것을 확인할 수 있다.
 
