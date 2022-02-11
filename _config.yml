@@ -18,12 +18,12 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Inbird's diary                          # the main title
+title: 남조의 삽질기록장                          # the main title
 
 tagline: 개인적인 공부와 잡담을 올리는 공간입니다.   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Unity, Game, C#, AI, artificial intelligence
+  Unity, Game, C#, AI, artificial intelligence, jekyll
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://Inbird81.github.io'
@@ -38,7 +38,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: 남조
-  email: inbird81@gmaiil.com             # change to your email address
+  email: inbird81@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     #- https://twitter.com/username      # change to your twitter homepage
@@ -80,7 +80,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: '/images/setting/avatar.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
