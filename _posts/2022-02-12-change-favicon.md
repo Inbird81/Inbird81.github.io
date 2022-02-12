@@ -2,7 +2,7 @@
 title:  "[Blog] Chirpy 블로그에 favicon 설정하기"
 
 categories:
-  - jekyll
+  - Jekyll
 tags:
   - [Blog]
 

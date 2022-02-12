@@ -3,7 +3,7 @@ title:  "[Jekyll] Synology Nas에서 jekyll 사용하기"
 excerpt: "Synology Nas의 Docker를 이용해 jekyll를 설치하고 사용하는 방법"
 
 categories:
-  - Diary
+  - Jekyll
 tags:
   - [Blog, jekyll, Synology]
 

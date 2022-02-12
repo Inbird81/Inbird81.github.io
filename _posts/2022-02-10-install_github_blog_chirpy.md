@@ -3,7 +3,7 @@ title:  "[Jekyll] Windows 10 환경에서 Github 블로그 설치"
 excerpt: "Windows 10 환경에서 Github 블로그와 Chirpy 테마 설치"
 
 categories:
-  - Jelyll
+  - Jekyll
 tags:
   - [Blog, jekyll]
 
