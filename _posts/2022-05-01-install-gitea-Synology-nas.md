@@ -27,9 +27,10 @@ date: 2022-05-01
 사실 거의 나 혼자 쓰는 서버고 프로젝트 관리도 프로세스도 없는 거나 마찬가지라 기능은 딱히 쓰는 것도 없고.
 
 설치 작업에 참고한 포스팅과 영상 주소는 다음과 같다.
-<https://itslog.tistory.com/entry/Gitea-in-docker>
-<https://youtu.be/jTwtna4BuxE>
+><https://itslog.tistory.com/entry/Gitea-in-docker>
 
+><https://youtu.be/jTwtna4BuxE>
+<iframe width="800" height="400" src="https://www.youtube.com/embed/jTwtna4BuxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 설치는 Docker에서 gitea를 검색해서 이미지를 다운받은 후 등록하면 된다.
