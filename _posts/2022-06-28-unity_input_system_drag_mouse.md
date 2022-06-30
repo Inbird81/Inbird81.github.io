@@ -1,10 +1,9 @@
 ---
 title:  "[Unity] new input system 에서 drag 쉽게 구현하기"
 
-categories:
-  - Unity
-tags:
-  - [Unity]
+categories: [Unity, Input System]
+tags: 
+  - [Unity, Input System]
 
 img_path: /images/
 toc: true
@@ -16,7 +15,7 @@ date: 2022-06-28
 
 그리고 최근에, 마우스 버튼을 누른 상태로 드래그해서 시점을 전환하는 기능을 구현하려고 했다.
 
-구글링을 해보니 코드를 쓰는 방법이 이것저것 나와 있는데, Modifier 기능을 사용하면 코드 없이도 PlayerAction 에셋 내에서 설정만으로 두 개 이상의 키를 조합할 수 있다.
+구글링을 해보니 코드를 쓰는 방법이 이것저것 나와 있는데, Modifier 기능을 사용하면 코드 없이도 Input Action Asset 내에서 설정만으로 두 개 이상의 키를 조합할 수 있다.
 
 방법은 간단하다.
 
