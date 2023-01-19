@@ -9,7 +9,7 @@ img_path: /images/
 toc: true
 toc_sticky: true
  
-date: 2022-06-28
+date: 2022-06-30
 ---
 유니티 [new Input System](https://blog.unity.com/kr/technology/introducing-the-new-input-system)에서 키 입력에 함수를 할당하는 방법은 매우 간단하다.
 
