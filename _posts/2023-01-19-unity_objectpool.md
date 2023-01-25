@@ -25,6 +25,9 @@ Object Pool이야 유니티에서 가장 잘 알려진 테크닉 중 하나겠�
 
 먼저 오브젝트 풀로 관리될 객체의 클래스에 다음을 추가한다.
 ```csharp
+using UnityEngine;
+using UnityEngine.Pool;
+
 public class Rabbit : MonoBehaviour
 {
   .
