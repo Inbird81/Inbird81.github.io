@@ -15,7 +15,11 @@ date: 2023-03-29
 
 ![unsafe repository](2023-03-29-1.png)
 
-이건 또 뭔 문제인가 하고 찾아보니 Git이 업데이트되면서 보안 관련으로 뭔가 추가되어서인 것 같다. 상당히 많이 발생한 문제여서인지 열받은 사람들도 많았던 모양.
+나는 github 블로그를 [시놀로지 NAS에서 돌리기](https://inbird81.github.io/posts/install-jelyll-Synology-nas/) 때문에 이 블로그의 소스가 있는 리포지터리는 네트워크 드라이브(Z:)에 있었는데, 이게 뭔가 보안 문제를 일으키는 거라는 추측은 쉽게 할 수 있었다.
+
+하지만 전에는 멀쩡하게 되던 게 소스트리 새로 설치하니까 안 되는건 뭐란 말인가?
+
+대체 뭔 문제인가 하고 찾아보니 Git이 업데이트되면서 보안 관련으로 뭔가 추가되어서인 것 같다. 상당히 많이 발생한 문제여서인지 열받은 사람들도 많았던 모양.
 
 > [Fix that damn Git Unsafe Repository](https://weblog.west-wind.com/posts/2023/Jan/05/Fix-that-damn-Git-Unsafe-Repository)
 
@@ -37,8 +41,8 @@ git config --global --add safe.directory <Git folder>
 git의 설정은 C:\Users\<username>\.gitconfig 파일에 저장되는데, 여기에 `[safe]`라는 항목에 관련 설정이 저장된다. 위의 커맨드를 입력하고 파일을 열어보면 등록한 폴더 경로를 확인할 수 있는데, 이 파일을 수정하고 SourceTree를 재시작하면 바뀐 설정이 적용된다.
 
 하지만 내 경우, 여기까지 해도 문제가 해결되지 않았다.
-
-나는 github 블로그를 [시놀로지 NAS에서 돌리기](https://inbird81.github.io/posts/install-jelyll-Synology-nas/) 때문에 이건 safe.directory로 지정해도 안되는건가 하고 있었는데, 에러메세지를 다시 보니 눈에 띄는 부분이 있었다.
+네트워크 드라이브 경로는 safe.directory로 지정해도 안되는건가? 하지만 NAS에서 블로그를 돌리려면 다른 곳으로 옮길 수가 없는데...
+그런 생각을 하면서 에러메세지를 다시 보니 눈에 띄는 부분이 있었다.
 
 ![unsafe repository](2023-03-29-1.png)
 
@@ -48,3 +52,5 @@ git의 설정은 C:\Users\<username>\.gitconfig 파일에 저장되는데, 여�
 확실히는 모르겠지만 저거 자체가 `\\`를 표기하기 위한 코드로 같이 들어가야 하는 것 같다.
 
 그리고 에러 메세지 자체에 경로가 `/`로 표시되어 있다. 이 메세지를 복붙할 수 있었으면 오히려 금방 해결됐을지도 모르는데, 왜 메세지창 텍스트는 copy & paste가 안 되는 걸까...
+
+추가로, safe.directory에 네트워크 드라이브의 드라이브 경로(`z:/xxxx`)를 넣어도 동작하지 않는다. `//`로 시작하는 네트워크 경로만 인식하는 것 같다.
