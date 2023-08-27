@@ -2,9 +2,9 @@
 title:  "Lock과 Interlocked.increment의 속도 차이"
 
 categories:
-  - C#
+  - C&#35;
 tags:
-  - [C#]
+  - [C&#35;]
 
 img_path: /images/
 toc: false

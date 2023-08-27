@@ -1,9 +1,9 @@
 ---
 title:  "C#의 string은 reference type인가?"
 
-categories: [C#]
+categories: [C&#35;]
 tags:
-  - [C#]
+  - [C&#35;]
 
 img_path: /images/
 toc: true

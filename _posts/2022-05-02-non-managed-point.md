@@ -2,9 +2,9 @@
 title:  "CLI에서 비관리 포인터가 멋대로 사라지는 문제"
 
 categories:
-  - C#
+  - C&#35;
 tags:
-  - [C#]
+  - [C&#35;]
 
 img_path: /images/
 toc: false

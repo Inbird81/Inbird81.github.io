@@ -2,9 +2,9 @@
 title:  "[C#] ?, ??, ??="
 
 categories:
-  - C#
+  - C&#35;
 tags:
-  - [C#]
+  - [C&#35;]
 
 img_path: /images/
 toc: true
@@ -76,6 +76,8 @@ int retInt = class1?.fooInt() ?? 0;
 a ?? (b ?? c)
 d ??= (e ??= f)
 ```
+
+![몰루](question.jpg)
 
 이게 뭔 경상도에서 가가 가가 가가가 하는 것도 아니고...
 

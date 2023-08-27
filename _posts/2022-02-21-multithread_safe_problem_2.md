@@ -2,9 +2,9 @@
 title:  "C#에서 멀티스레드에 안전한 구조 설계 (2)"
 
 categories:
-  - C#
+  - C&#35;
 tags:
-  - [C#]
+  - [C&#35;]
 
 img_path: /images/
 toc: false

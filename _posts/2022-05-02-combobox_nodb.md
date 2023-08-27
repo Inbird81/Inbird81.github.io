@@ -2,9 +2,9 @@
 title:  "C# ComboBox의 SelectedValue DB 없이 사용하는 법."
 
 categories:
-  - C#
+  - C&#35;
 tags:
-  - [C#]
+  - [C&#35;]
 
 img_path: /images/
 toc: false
