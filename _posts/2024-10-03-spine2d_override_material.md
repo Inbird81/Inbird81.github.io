@@ -9,9 +9,9 @@ img_path: /images/
 toc: true
 toc_sticky: true
  
-date: 2023-10-03
+date: 2024-10-03
 ---
-유니티 게임개발 시 많이 사용되는 [Spine](https://ko.esotericsoftware.com/spine-in-depth)에서 스파인 애니메이션 중에 실시간으로 메테리얼을 교체해야 하는 이슈가 있었다.<br>
+유니티 게임개발 시 많이 사용되는 [Spine](https://ko.esotericsoftware.com/spine-in-depth)을 쓰던 도중, 스파인 애니메이션 중에 실시간으로 메테리얼을 교체해야 하는 이슈가 있었다.<br>
 
 맨 처음에는 평범하게 유니티 `Mesh Renderer`에서 직접 `material`을 변경해봤다.
 
@@ -37,4 +37,4 @@ obj.GetComponent<Renderer>().materials = new Material[2] {newMaterial, newMateri
 		skeleton.CustomMaterialOverride.Add(mat, newMaterial);
 ```
 
-스파인 쪽에 기능이 있을 거라는 생각을 못 하면 한참 헤맬 수 있는 문제였는데, 다행이 직감판정에 성공해서 빠르게 해법을 찾을 수 있었다.
+스파인 쪽에 기능이 있을 거라는 생각을 못 하면 한참 헤맬 수 있는 문제였는데, 다행이 직감판정(?)에 성공해서 빠르게 해법을 찾을 수 있었다.
