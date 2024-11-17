@@ -74,7 +74,8 @@ public class InventoryTest : MonoBehaviour
  이와 관련된 불편을 호소하는 사람들은 나 혼자가 아닌지, 관련글을 꽤 많이 찾을 수 있었다.
  
  > [Save List of Scriptable objects](https://discussions.unity.com/t/save-list-of-scriptable-objects/848395)<br>
- > [Serializing References to ScriptableObjects](https://stackoverflow.com/questions/75682909/serializing-references-to-scriptableobjects)
+ > [Serializing References to ScriptableObjects](https://stackoverflow.com/questions/75682909/serializing-references-to-scriptableobjects)<br>
+ > [Serializing ScriptableObject Reference (InstanceID)](https://stackoverflow.com/questions/61698052/serializing-scriptableobject-reference-instanceid)
 
  Reference Type을 저장하는 건 복잡한 문제니까 그렇다 쳐도, 최소한 ScriptableObject에 대해서만이라도 지원해주는 게 맞지 않나? 아이템 같은 걸 SO로 구현하는 건 상당히 일반적인데, 인벤토리를 저장할 방법 정도는 게임에서 지원해야지...<br>
  ScriptableObject이나 그 이후에 추가된 기능들을 보면 유니티가 추가하는 신기능들은 뭔가 나사가 하나씩 빠져있는 느낌이 든다.
