@@ -70,4 +70,11 @@ public class InventoryTest : MonoBehaviour
  그럼 이 문제는 어떻게 해결해야 하는가?<br>
  상식적으로 ScriptableObject는 유니티가 미는 주요 기능이니까 뭔가 해결 방법이 있을 것이다...<br>
  라고 생각했지만, 구글을 한참 뒤져도 이 문제를 해결하는 '유니티의 자체 기능'은 없었다. 어떤 형태로든 SO에 대한 참조를 저장하지 않고 우회하는 구조를 만들라는 이야기가 대부분. 참조를 직렬화하기 어려운 건 원래 그랬지만 SO는 고정된 에셋인데도 그렇다.<br>
- SO에 고유 ID를 할당하고 매니저 클래스에서 ID로 참조, 세이브 파일에는 ID값만 넣는 식으로 충분히 구현 가능하지만, 왜 이걸 공식으로 지원하는 기능이 없지? 유니티가 뭔가 기능을 추가할수록 나사빠진 엔진이 되어간다는 느낌은 나 혼자 받는 게 아닌 모양이다.
+ SO에 고유 ID를 할당하고 매니저 클래스에서 ID로 참조, 세이브 파일에는 ID값만 넣는 식으로 충분히 구현 가능하지만, 유니티는 이런 기능을 공식적으로 지원하지 않으며, 사용자가 직접 구현해야만 한다.<br>
+ 이와 관련된 불편을 호소하는 사람들은 나 혼자가 아닌지, 관련글을 꽤 많이 찾을 수 있었다.
+ 
+ > [Save List of Scriptable objects](https://discussions.unity.com/t/save-list-of-scriptable-objects/848395)<br>
+ > [Serializing References to ScriptableObjects](https://stackoverflow.com/questions/75682909/serializing-references-to-scriptableobjects)
+
+ Reference Type을 저장하는 건 복잡한 문제니까 그렇다 쳐도, 최소한 ScriptableObject에 대해서만이라도 지원해주는 게 맞지 않나? 아이템 같은 걸 SO로 구현하는 건 상당히 일반적인데, 인벤토리를 저장할 방법 정도는 게임에서 지원해야지...<br>
+ ScriptableObject이나 그 이후에 추가된 기능들을 보면 유니티가 추가하는 신기능들은 뭔가 나사가 하나씩 빠져있는 느낌이 든다.
