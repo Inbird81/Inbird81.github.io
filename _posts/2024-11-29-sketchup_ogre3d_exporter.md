@@ -102,4 +102,32 @@ def collectMaterials(matlist, ents, trans, inherited_mat, root)
     end
   end
 end
-```    
+```
+
+- 함수 인자.<br>
+> m : 메테리얼 정보. 정확히는 [핸들 – [면, 변환, 전/후면, 상속된 메테리얼]의 배열]의 배열.<br>
+> face : 면(face) 정보<br>
+> trans: 변환 행렬<br>
+> frontface : 전/후면 여부를 나타내는 Boolean값.<br>
+> inherited_mat : 상속된 메테리얼 정보. 정확히는 [메테리얼, 엔터티, 변환 행렬]의 구조체.<br>
+<Br>
+
+```ruby 
+def collectFace(m, face, trans, handle, frontface, inherited_mat)
+  index = nil
+  # times는 클래스의 값만큼 반복하는 반복자의 일종으로 추정(each처럼)
+  # i에 대해 루프를 돈다고 생각하면 될 듯 (감으로 찍기, 이미 프로그램이 아니다 -_-)
+  (m.size).times {|i| if m[i][0]==handle then index = i end}
+  # index가 nil이 아니라는 것은 인자로 받은 handle에 해당하는
+  # 메테리얼이 이미 m에 있다는 뜻이므로, 값만 채워넣는다.
+  if index    
+    m[index][1].push([face,trans,frontface, inherited_mat])
+  else    # 핸들값이 없을 경우 전체 구조체를 m에 추가한다.
+    m.push([handle,[[face,trans,frontface, inherited_mat]]])
+  end
+end
+```
+
+개인적으로, 대체 왜 이런 구조를 쓰는지 이해할 수가 없다. 메테리얼 리스트 따로 모으고 face 데이터는 따로 모으면 어디 덧나냐? 왜 이걸 메테리얼 쪽에 다 몰아넣으려고 하는건지, 게다가 엔터티 ID 놔두고 왜 텍스쳐 핸들값을 인덱스로 쓰는데? -_-;<br> 
+
+아무래도 루비로 익스포터를 만들게 되면 아예 새로 짜야 할 듯.
